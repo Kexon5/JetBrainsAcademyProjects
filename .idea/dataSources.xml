@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="H2 - recipes_db" uuid="cd21f65f-e2dc-4f08-9726-9dbd15b731a1">
+      <driver-ref>h2.unified</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.h2.Driver</jdbc-driver>
+      <jdbc-url>jdbc:h2:file:../recipes_db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+      <auto-close enable="true" timeout="2" />
+    </data-source>
+  </component>
+</project>
