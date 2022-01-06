@@ -1,0 +1,68 @@
+.flashcards-background {
+    display: flex;
+    height: 95vh;
+    background: url(world.png) no-repeat center center;
+
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.flashcards {
+    display: flex;
+    position: relative;
+    height: 80%;
+    width: 40%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    top: 2vh;
+    justify-content: space-between;
+}
+
+.flip-item {
+    position: relative;
+    perspective: 30rem;
+
+    height: 10vw;
+    width: 10vw;
+}
+
+
+.flip-item-front, .flip-item-back {
+    border: 3px solid lightslategray;
+    border-radius: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    line-height: 2em;
+    position: absolute;
+    text-align: center;
+
+    height: 100%;
+    width: 100%;
+
+    transition: transform 1s;
+    backface-visibility: hidden;
+}
+
+.flip-item-front {
+    color: black;
+    background: white;
+}
+
+.flip-item-back {
+    color: white;
+    background: lightslategray;
+    transform: rotateY(180deg);
+}
+
+.flip-item:hover .flip-item-front {
+    transform: rotateY(180deg);
+}
+
+.flip-item:hover .flip-item-back {
+    transform: rotateY(360deg);
+}
+
